@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Project 2 - Sara Truffi</title>
+    <style>
+      { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font-family: Arial, sans-serif; background: white; }
+      
+      nav ul { list-style: none; padding: 20px 0; }
+      nav ul li { display: inline; margin-right: 20px; }
+      nav a { 
+        text-decoration: none;
+        font-size: 18px;
+        color: #d14f9c;
+        padding: 6px 10px;
+        font-family: Arial, sans-serif;
+      }
+      nav a:hover { color: #ffb6db; }
+      nav a:active { color: #aa2f79; }
+      nav a:visited { color: #c6428f; }
+      
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        position: relative;
+        padding: 40px 0;
+      }
+      
+      .purple-bar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 50%;
+        background: #d9c4f0;
+        z-index: -1;
+      }
+      
+      .left-col h1 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      
+      .left-col p {
+        font-size: 15px;
+        line-height: 1.6;
+        max-width: 400px;
+      }
+      
+      .image-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px;
+      }
+      
+      .image-grid img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 40px;
+        position: relative;
+      }
+      
+      footer {
+        background-color: #d14f9c;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 60px;
+        font-family: Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+      <div class="purple-bar"></div>
+      <div class="section">
+        <div class="left-col">
+          <h1>Where You At?<br>WhereYou Going?</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. Inad cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. Pulvinar vivamus fringilla lacus nec metus Quisque faucibus ex sapien vitae.</p>
+        </div>
+        <div class="image-grid">
+          <img src="filename.jpg" alt="description of image">
+          <img src="filename.jpg" alt="description of image">
+          <img src="filename.jpg" alt="description of image">
+          <img src="filename.jpg" alt="description of image">
+        </div>
+      </div>
+    </div>
+    <footer>@ 2025 Sara Truffi - All Rights Reserved</footer>
+  </body>
+</html>
