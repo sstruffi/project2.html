@@ -4,76 +4,48 @@
     <meta charset="utf-8">
     <title>Project 2 - Sara Truffi</title>
     <style>
-      { margin: 0; padding: 0; box-sizing: border-box; }
-      body { font-family: Open Sans, sans-serif; background: white; }
-      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Open Sans", sans-serif;
+        background: white;
+        position: relative;
+      }
+
       nav ul { list-style: none; padding: 20px 0; }
       nav ul li { display: inline; margin-right: 20px; }
-      nav a { 
+      nav a {
         text-decoration: none;
         font-size: 18px;
         color: #d14f9c;
         padding: 6px 10px;
-        font-family: Open Sans, sans-serif;
+        font-family: "Open Sans", sans-serif;
       }
       nav a:hover { color: #ffb6db; }
       nav a:active { color: #aa2f79; }
       nav a:visited { color: #c6428f; }
-      
+
       .container {
         max-width: 1200px;
         margin: 0 auto;
         padding: 40px 0;
+        position: relative;
       }
-      
+
       .purple-bar {
         position: absolute;
         left: 0;
-        top: 20;
-        bottom: 40;
-        height: 100%;
+        top: 100px;
+        bottom: 40px;
         width: 50%;
         background: #d9c4f0;
         z-index: -1;
       }
-      
-      .left-col h1 {
-        text-align: center;
-        font-size: 30px;
-        margin-bottom: 30px;
-        color: #FFF;
-      }
-      
-      .left-col p {
-        text-align: center;
-        font-size: 18px;
-        margin-bottom: 30px;
-        color: #FFF;
-      }
-      
-      .image-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr; 
-        gap: 20px;
-      }
-      
-      .image-grid img {
-        width: 100%;
-        height: auto;
-        transition: transform 0.35s ease, box-shadow 0.35s ease;
-        display: block;
-      }
-      
-      .image-item {
-        overflow: hidden;
-      }
-      
-      .image-item:hover img {
-        transform: scale(1.05);
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-        curser: pointer;
-      }
-      
+
       .section {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -81,49 +53,101 @@
         gap: 40px;
         position: relative;
       }
-      
+
+      .left-col h1 {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 30px;
+        color: #ffffff;
+      }
+
+      .left-col p {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 30px;
+        color: #ffffff;
+        line-height: 1.6;
+      }
+
+      .image-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .image-grid img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.35s ease, box-shadow 0.35s ease;
+        display: block;
+      }
+
+      .image-item {
+        overflow: hidden;
+      }
+
+      .image-item:hover img {
+        transform: scale(1.05);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+      }
+
       footer {
         background-color: #d14f9c;
         color: white;
         text-align: center;
         padding: 20px 0;
         margin-top: 60px;
-        font-family: Open Sans, sans-serif;
+        font-family: "Open Sans", sans-serif;
       }
     </style>
   </head>
+
   <body>
     <div class="container">
       <nav>
         <ul>
-          <li><a href="index.HTML">Home</a></li>
-          <li><a href="PORTFOLIO.HTML">Portfolio</a></li>
-          <li><a href="ABOUT.HTML">About Me</a></li>
-          <li><a href="CONTACT.HTML">Contact Me</a></li>
+          <li><a href="https://sstruffi.github.io/home.html/">Home</a></li>
+          <li><a href="https://sstruffi.github.io/work.index/">Portfolio</a></li>
+          <li><a href="https://sstruffi.github.io/aboutme.html/">About Me</a></li>
+          <li><a href="https://sstruffi.github.io/contactme.html/">Contact Me</a></li>
         </ul>
       </nav>
+
       <div class="purple-bar"></div>
+
       <div class="section">
         <div class="left-col">
           <h1>Where You At?<br>Where You Going?</h1>
-          <p>This project is a visual exploration<br>of me as a designer,<br>focused on defining my personal taste<br>style, and design values. Through a<br>series of four posters created using a<br>mix of visual collage and generative AI,<br>I explored my design philosophy,<br>creative identity, and what I believe<br>good design stands for. The work<br>emphasizes bold visuals and<br>storytelling, using GenAI as a creative<br>tool rather than a shortcut. Each poster<br>reflects a different part of my design<br>thinking, what inspires me, how I approach<br>creativity, and the principles that guide my<br>work. Together, the series functions as a<br>visual self-portrait, capturing where I am<br>now as a designer and where I want my<br>work to go.</p>
+          <p>
+            This project is a visual exploration of me as a designer,
+            focused on defining my personal taste, style, and design values.
+            Through a series of four posters created using a mix of visual
+            collage and generative AI, I explored my design philosophy,
+            creative identity, and what I believe good design stands for.
+            The work emphasizes bold visuals and storytelling, using GenAI
+            as a creative tool rather than a shortcut.
+            Each poster reflects a different part of my design thinking,
+            what inspires me, how I approach creativity, and the principles
+            that guide my work. Together, the series functions as a visual
+            self-portrait, capturing where I am now as a designer and where
+            I want my work to go.
+          </p>
         </div>
+
         <div class="image-grid">
           <div class="image-item">
-          <img src="poster1.png" alt="description of image">
-          </div>
+            <img src="poster1.png" alt="Poster 1 from the Where You At Where You Going series" width="600" height="800"></div>
           <div class="image-item">
-          <img src="poster2.png" alt="description of image">
-          </div>
+            <img src="poster2.png" alt="Poster 2 from the Where You At Where You Going series" width="600" height="800"></div>
           <div class="image-item">
-          <img src="poster4.png" alt="description of image">
-          </div>
+            <img src="poster4.png" alt="Poster 4 from the Where You At Where You Going series" width="600" height="800"> </div>
           <div class="image-item">
-          <img src="poster3.png" alt="description of image">
-          </div>
+            <img src="poster3.png" alt="Poster 3 from the Where You At Where You Going series" width="600" height="800"></div>
         </div>
       </div>
     </div>
+
     <footer>@ 2025 Sara Truffi - All Rights Reserved</footer>
   </body>
 </html>
