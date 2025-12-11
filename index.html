@@ -69,6 +69,9 @@
         line-height: 1.6;
       }
 
+      /* I used GenAI to help debug why my grid layout and hover effects
+      were not working as expected. It helped me understand issues with spacing, and how overflow: hidden ensures the zoom effect stays inside the container. Gen AI also clarified why the transform and box-shadow transitions need to be on the img itself.AI was used mainly to troubleshoot and clarify code.*/
+
       .image-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
